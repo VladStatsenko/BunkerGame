@@ -26,7 +26,7 @@ public class Main {
         JSONArray gender = (JSONArray) playerInfoArray.get("GENDER");
         JSONArray age = (JSONArray) playerInfoArray.get("AGE");
         JSONArray sex = (JSONArray) playerInfoArray.get("SEX");
-        System.out.println("Общая информация: " + randomCard(gender) + " , " + randomCard(age) + " , " + randomCard(sex));
+        System.out.println("Общая информация: " + randomCard(gender) + " , " + randomCard(age));
 
 
         JSONArray phobiesArray = (JSONArray) jsonData.get("PHOBIES");
@@ -44,6 +44,7 @@ public class Main {
         JSONArray profArray = (JSONArray) jsonData.get("PROF");
         System.out.println("Профессия: " + randomCard(profArray));
         JSONArray actionCardsArray = (JSONArray) jsonData.get("ACTIONCARDS");
+        System.out.println("Действие: " + randomCard(actionCardsArray));
         System.out.println("Действие: " + randomCard(actionCardsArray));
     }
 
